@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: yourpremierlab.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Sep  4 23:44:25 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: premierv2.safemedicaldata.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Aug 26 13:06:50 2026 GMT
+  hsts: false
+domains:
+- domain: yourpremierlab.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
+- domain: safemedicaldata.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false

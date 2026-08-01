@@ -1,8 +1,25 @@
 aid: premier-laboratory-services
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/premier-laboratory-services.png
 name: Premier Laboratory Services
-description: Premier Laboratory Services is a company surfaced as a portfolio company of canaan-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Premier Laboratory Services is a locally-owned clinical diagnostics laboratory
+  based in Scott, Louisiana, providing testing services to healthcare facilities and
+  providers. Its menu includes LCMS-MS drug testing, PCR testing (respiratory, UTI,
+  STD, women's health, and wound), and blood/clinical chemistry testing, with more than
+  200 tests available and an advertised 24-hour average turnaround. The company emphasizes
+  local representatives and personalized service, and offers a patient results portal. It
+  is surfaced in the API Evangelist network as a portfolio company of Canaan Partners. As of
+  this profile the company publishes no public developer program, API, or documentation.
 url: https://raw.githubusercontent.com/api-evangelist/premier-laboratory-services/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +29,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Clinical Laboratory
+- Diagnostics
+- Healthcare
+- Medical Testing
+- Louisiana
+common:
+- type: DomainSecurity
+  url: security/premier-laboratory-services-domain-security.yml
+- name: Website
+  url: https://yourpremierlab.com
+  type: Website
+- name: Patient Portal
+  url: https://premierv2.safemedicaldata.com
+  type: Portal
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
